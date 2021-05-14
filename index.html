@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HT Protfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer HT">
+    <meta name="author" content="HT">
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/png" href="imgs/h.png">
+    <!-- 폰트설정: FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/9324e5e35c.js" crossorigin="anonymous"></script>
+    <!-- 폰트설정 : GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS, JavaScript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script> <!-- defer : html이 pursuing 되는 동안 자바스크립트 파일을 동시에 다운로드 받는다. (html이 파싱이 왼료되면 스크립트 파일을 실행 ) -->
+    <!-- <script src="function.js" defer></script> -->
+    <!-- <script src="array.js" defer></script> -->
+    <!-- <script src="object.js" defer></script> -->
+    <!-- <script src="class.js" defer></script> -->
+    <!-- <script src="array-api.js" defer></script> -->
+    <!-- <script src="json.js" defer></script> -->
+    <!-- <script src="async/callback.js" defer></script> -->
+    <!-- <script src="async/promise.js" defer></script> -->
+    <!-- <script src="async/async.js" defer></script> -->
+    <!-- <script src="es6-11/es6.js"></script> -->
+    <!-- <script src="es6-11/es11.js"></script> -->
+</head>
+<body>
+    <!-- <h1>Heading</h1> -->
+    <!-- <h2>Heading</h2> -->
+    <!-- <h3>Heading</h3> -->
+    <!-- <p>Paragraph</p> -->
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-diaspora"></i>
+            <a href="">HT</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My Work</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+
+        <!-- Toggle button-->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home"> 
+        <div class="home__container">
+            <img src="imgs/sr.jpg" alt="HT profile photo" class="home__avator"/>
+            <h1 class="home__title">Hello, <br/> I'm Dream Coder</h1>
+            <h2 class="home__description">A Software Engineer currently residing in USA, Australia</h2>
+            <button class="home__contact" data-link="#contact">Contact Me</button>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section__container">
+            <h1>About me</h1>
+            <p>
+                위드정보회사에 입사하여 금융사업팀에서 개발자로 일하면서<br/>
+                '신한은행' 에서 '기업CSS 와 부동산 자동대출심사 프로젝트' 에서 화면 및 모듈개발을 진행하였으며<br/>
+                '국민은행' 에서 '기업여신자동심사' 차세대 프로젝트를 진행한 경험이 있습니다.
+            </p>
+            <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major__title">
+                    Front-end
+                </h2>
+                <div class="major__desctiption">
+                    HTML, CSS, JavaScript, TypeScript,
+                    <br />React, Vue, Web, APIs
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <h2 class="major__title">
+                    Mobile
+                </h2>
+                <div class="major__desctiption">
+                    Android, IOS, React Native, Flutter,
+                    <br />Java, Swift, Kotlin
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h2 class="major__title">
+                    DataBase
+                </h2>
+                <div class="major__desctiption">
+                    Java, JavaScript, Go, NodeJS
+                    <br />React, Vue, Web, APIs
+                </div>
+            </div>
+            </div>
+            <div class="about__jobs">
+            <div class="job">
+                <img src="imgs/jobs/job_logo_ShinHanbank.png" alt="ShinHan" class="job__logo" width="140">
+                <div class="job__description">
+                    <p class="job__name">Currently working at KB Bank as Software Engineering</p>
+                    <p class="job__period">2019 July - 2019 Oct / 2020 May - 2020 Nov</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/job_logo_KBbank.png" alt="KB" class="job__logo" width="140">
+                <div class="job__description">
+                    <p class="job__name">Currently working at KB Bank as Software Engineering</p>
+                    <p class="job__period">2019 Oct - 2020 Apli</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attribute</h2>
+            <p>
+                Experience with all phases of the software life-cycle, Passion...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, corrupti. Debitis laudantium quibusdam nemo cumque fugit doloremque dolore. Dicta, reiciendis. Natus enim amet quia porro harum numquam unde atque accusantium!
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 99%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>React</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 50%;"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Stidio Code</span></li>
+                        <li><span>IntelliJ</span></li>
+                        <li><span>Android Studio Code</span></li>
+                        <li><span>IOS developer tools</span></li>
+                        <li><span>Sketch</span></li>
+                    </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Scrum master</span></li>
+                            <li><span>Math</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Project</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="all">
+                    All<span class="category__count">8</span>
+                </button>
+                <button class="category__btn" data-filter="front-end">
+                    Front-end<span class="category__count">3</span>
+                </button>
+                <button class="category__btn" data-filter="back-end">
+                    Back-end<span class="category__count">3</span>
+                </button>
+                <button class="category__btn" data-filter="mobile">
+                    Mobile<span class="category__count">2</span>
+                </button>
+            </div>
+            <div class="work__project">
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="front-end">
+                    <img class="project__img" src="imgs/projects/project_1.PNG" alt="project_1">
+                    <div class="project__description">
+                        <h3>Youtube Site01</h3>
+                        <span>Clone coding with HTML CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="front-end">
+                        <img class="project__img" src="imgs/projects/project_2.PNG" alt="project_2">
+                        <div class="project__description">
+                            <h3>Youtube Site02</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="back-end">
+                        <img class="project__img" src="imgs/projects/project_3.PNG" alt="project_3">
+                        <div class="project__description">
+                            <h3>Youtube Site03</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="mobile">
+                        <img class="project__img" src="imgs/projects/project_4.PNG" alt="project_4">
+                        <div class="project__description">
+                            <h3>Youtube Site04</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="front-end">
+                        <img class="project__img" src="imgs/projects/project_5.PNG" alt="project_5">
+                        <div class="project__description">
+                            <h3>Youtube Site05</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="back-end">
+                        <img class="project__img" src="imgs/projects/project_6.PNG" alt="project_6">
+                        <div class="project__description">
+                            <h3>Youtube Site06</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="back-end">
+                        <img class="project__img" src="imgs/projects/project_7.PNG" alt="project_7">
+                        <div class="project__description">
+                            <h3>Youtube Site07</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+                <a href="https://www.youtube.com/" class="project" target="blank" data-type="mobile">
+                        <img class="project__img" src="imgs/projects/project_8.PNG" alt="project_8">
+                        <div class="project__description">
+                            <h3>Youtube Site08</h3>
+                            <span>Clone coding with HTML CSS</span>
+                        </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3 class="">See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="imgs/testimonial/testimonial_01.PNG" alt="People" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Eum, fugiat dolor veniam quia, quidem quos quibusdam, a alias 
+                            similique iusto architecto incidunt suscipit? Placeat recusandae
+                            distinctio, ullam voluptatibus facere illo.
+                        </p>
+                        <p class="name"><a href="">HT</a> / KB </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Eum, fugiat dolor veniam quia, quidem quos quibusdam, a alias 
+                            similique iusto architecto incidunt suscipit? Placeat recusandae
+                            distinctio, ullam voluptatibus facere illo.
+                        </p>
+                        <p class="name"><a href="">HT</a> / KB </p>
+                    </div>
+                    <img src="imgs/testimonial/testimonial_01.PNG" alt="People" class="testimonial__avatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/fkdlxmfkdl1/portpolio" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2020 Dream Coding Ellie - All rights reserved
+        </p>
+    </section>
+
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
